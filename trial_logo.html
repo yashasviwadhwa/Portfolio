@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .marquee-container {
+        width: 100%;
+        background-color: red;
+        overflow: hidden;
+        padding: 30px 0;
+      }
+
+      .marquee-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: scroll 30s linear infinite;
+        gap: 5rem;
+      }
+
+      .marquee-item {
+        flex-shrink: 0;
+        height: 35px;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .marquee-item img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        transition: transform 9s ease;
+      }
+
+      .marquee-item:hover img {
+        transform: scale(1.1);
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-50% - 12px));
+        }
+      }
+      .last-section {
+        text-align: center;
+        margin: auto;
+        background-color: rgb(49, 51, 60);
+        width: 100%;
+      }
+      .last-section .last {
+        width: 80%;
+        margin: auto;
+        background-color: rgb(30, 31, 36);
+        padding: 4rem 6rem;
+        color: white;
+      }
+      .last-section .last .title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .last-section .last .description {
+        font-size: 1.25rem;
+        width: 60%;
+        line-height: 28px;
+        color: rgb(176, 170, 192);
+        margin: 0 auto 30px auto;
+      }
+      .last-section .last .sociling {
+        cursor: pointer;
+        display: flex;
+        gap: 1.4rem;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease;
+        margin: 0 auto 90px auto;
+      }
+      .last-section .last .sociling i {
+        font-size: 1.8rem;
+      }
+      .last-section .last .sociling i:hover {
+        transition: 0.6s ease;
+        color: #ff69b4;
+        transform: translateY(-10px);
+      }
+      .last-section .wokdbbd {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(176, 170, 192);
+      }
+      .lasting {
+        display: flex;
+        gap: 1rem;
+      }
+      .swiper {
+        padding: 20px 10px;
+      }
+      @media screen and (max-width: 980px) {
+        .wokdbbd {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+        .lasting {
+          display: flex;
+          gap: 2rem;
+          flex-direction: column;
+        }
+        .last .description {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <div class="marquee-item">
+          <img
+            src="https://ethemestudio.com/demo/fungi/11_home_boxed/image/partner/partner_logo_3.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="https://ethemestudio.com/demo/fungi/11_home_boxed/image/partner/partner_logo_5.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="https://ethemestudio.com/demo/fungi/11_home_boxed/image/partner/partner_logo_7.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="https://ethemestudio.com/demo/fungi/11_home_boxed/image/partner/partner_logo_8.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="https://ethemestudio.com/demo/fungi/11_home_boxed/image/partner/partner_logo_4.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="https://ethemestudio.com/demo/fungi/11_home_boxed/image/partner/partner_logo_6.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="marquee-item">
+          <img
+            src="https://ethemestudio.com/demo/fungi/11_home_boxed/image/partner/partner_logo_2.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+    </div>
+    <section class="last-section">
+      <div class="last">
+        <h5 class="title">Fungi</h5>
+        <p class="description">
+          Kilaboris nisi ut aliquip ex ea commodo consequat uis aute cupidatat
+          non proident sunt in culd est laborum.
+        </p>
+        <div class="sociling">
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-linkedin"></i>
+          <i class="bx bxl-youtube"></i>
+          <i class="bx bxl-instagram-alt"></i>
+        </div>
+        <div class="wokdbbd">
+          <div>
+            <p>All rights reserved © 2023 eThemeStudio</p>
+          </div>
+          <div class="lasting">
+            <p>Terms & Condition</p>
+            <p>Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

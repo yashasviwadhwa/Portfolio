@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 100%;
+        padding: 35px 10%;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)   ;
+        grid-column-gap: 1rem;
+      }
+
+      .row .col .title {
+        color: #11a372;
+        padding: 0px 0px 20px 30px;
+      }
+
+      .row .col .content {
+        padding: 0 30px;
+        border-left: 2px solid #bababa;
+      }
+
+      .row .col .con {
+        padding: 0 30px;
+      }
+
+      .row .col .content .box {
+        position: relative;
+        padding: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-bottom: 20px;
+      }
+
+      .row .col .content .box::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #11a372;
+        border: 2px solid white;
+        right: calc(100% + 22px);
+        top: 0;
+      }
+
+      .row .col .box .work {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <header class="title">
+            <h2>Education</h2>
+          </header>
+          <div class="con">
+            <div class="content">
+              <div class="box">
+                <p class="work">
+                  <span>Diploma in Algorythm</span> <span>2013-2015</span>
+                </p>
+                <h3>University of Rajshahi</h3>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia mollit laborum.
+                </p>
+              </div>
+              <div class="box">
+                <h4>2018-2022</h4>
+                <h3>High School Desgree</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Impedit hic soluta odit dolorum pariatur debitis quo quam iste
+                  sint corporis, ullam delectus cum quod beatae aliquid rem
+                  voluptatum non molestias esse officiis culpa modi. Incidunt
+                  minima temporibus saepe nesciunt, voluptatem necessitatibus
+                  perspiciatis! Minima id provident ipsa culpa sit consequatur
+                  iure?
+                </p>
+              </div>
+              <div class="box">
+                <h4>2018-2022</h4>
+                <h3>High School Desgree</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Impedit hic soluta odit dolorum pariatur debitis quo quam iste
+                  sint corporis, ullam delectus cum quod beatae aliquid rem
+                  voluptatum non molestias esse officiis culpa modi. Incidunt
+                  minima temporibus saepe nesciunt, voluptatem necessitatibus
+                  perspiciatis! Minima id provident ipsa culpa sit consequatur
+                  iure?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <header class="title">
+            <h2>Education</h2>
+          </header>
+          <div class="content">
+            <div class="box">
+              <h4>2018-2022</h4>
+              <h3>High School Desgree</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Impedit hic soluta odit dolorum pariatur debitis quo quam iste
+                sint corporis, ullam delectus cum quod beatae aliquid rem
+                voluptatum non molestias esse officiis culpa modi. Incidunt
+                minima temporibus saepe nesciunt, voluptatem necessitatibus
+                perspiciatis! Minima id provident ipsa culpa sit consequatur
+                iure?
+              </p>
+            </div>
+            <div class="box">
+              <h4>2018-2022</h4>
+              <h3>High School Desgree</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Impedit hic soluta odit dolorum pariatur debitis quo quam iste
+                sint corporis, ullam delectus cum quod beatae aliquid rem
+                voluptatum non molestias esse officiis culpa modi. Incidunt
+                minima temporibus saepe nesciunt, voluptatem necessitatibus
+                perspiciatis! Minima id provident ipsa culpa sit consequatur
+                iure?
+              </p>
+            </div>
+            <div class="box">
+              <h4>2018-2022</h4>
+              <h3>High School Desgree</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Impedit hic soluta odit dolorum pariatur debitis quo quam iste
+                sint corporis, ullam delectus cum quod beatae aliquid rem
+                voluptatum non molestias esse officiis culpa modi. Incidunt
+                minima temporibus saepe nesciunt, voluptatem necessitatibus
+                perspiciatis! Minima id provident ipsa culpa sit consequatur
+                iure?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

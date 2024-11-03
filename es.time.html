@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeline Component</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1f2235;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        position: relative;
+        padding: 20px;
+        max-width: 800px;
+        width: 100%;
+      }
+
+      .container::before {
+        position: absolute;
+        background-color: #fff;
+        width: 2px;
+        height: calc(100% - 40px);
+        left: 45px;
+        top: 20px;
+        content: "";
+      }
+
+      .timeline {
+        position: relative;
+        display: flex;
+        margin-bottom: 30px;
+        z-index: 1;
+      }
+
+      .profile {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+        border: 3px solid #fff;
+        z-index: 1;
+      }
+
+      .profile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .content {
+        position: relative;
+        background-color: #313552;
+        color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        width: calc(100% - 80px);
+        margin-left: 30px;
+      }
+
+      .content::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 20px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #313552;
+      }
+
+      .content h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .content p {
+        line-height: 1.6;
+        color: #ccc;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 10px;
+        }
+
+        .content {
+          padding: 15px;
+          margin-left: 20px;
+        }
+
+        .container::before {
+          left: 35px;
+        }
+
+        .profile {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="timeline">
+        <div class="profile">
+          <img src="/api/placeholder/50/50" alt="Profile" />
+        </div>
+        <div class="content">
+          <h3>Project Launch</h3>
+          <p>
+            Successfully launched the initial phase of the project, establishing
+            key milestones and team responsibilities. The kickoff meeting
+            received positive feedback from all stakeholders.
+          </p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="profile">
+          <img src="/api/placeholder/50/50" alt="Profile" />
+        </div>
+        <div class="content">
+          <h3>Development Phase</h3>
+          <p>
+            Completed the core development phase ahead of schedule. The team
+            implemented all planned features and conducted thorough testing to
+            ensure quality.
+          </p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="profile">
+          <img src="/api/placeholder/50/50" alt="Profile" />
+        </div>
+        <div class="content">
+          <h3>User Testing</h3>
+          <p>
+            Conducted comprehensive user testing sessions with focus groups.
+            Gathered valuable feedback that helped identify areas for
+            improvement and validate key features.
+          </p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="profile">
+          <img src="/api/placeholder/50/50" alt="Profile" />
+        </div>
+        <div class="content">
+          <h3>Optimization</h3>
+          <p>
+            Implemented performance optimizations based on user feedback.
+            Enhanced system response times and improved overall user experience
+            through targeted updates.
+          </p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="profile">
+          <img src="/api/placeholder/50/50" alt="Profile" />
+        </div>
+        <div class="content">
+          <h3>Final Release</h3>
+          <p>
+            Successfully deployed the final version to production. Received
+            positive feedback from users and stakeholders. Project completed
+            within budget and timeline constraints.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
